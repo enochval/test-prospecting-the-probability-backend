@@ -23,6 +23,11 @@ class Entity extends Model
     protected $entity_type;
 
     /**
+     * @var string
+     */
+    protected $entity_name;
+
+    /**
      * @var int
      */
     protected $credit_score;
@@ -80,6 +85,24 @@ class Entity extends Model
         }
 
         $this->entity_type = $entity_type;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getEntityName(): string
+    {
+        return $this->entity_name;
+    }
+
+    /**
+     * @param string $entity_name
+     * @return Entity
+     */
+    public function setEntityName(string $entity_name): Entity
+    {
+        $this->entity_name = $entity_name;
         return $this;
     }
 
@@ -177,6 +200,22 @@ class Entity extends Model
 
         $this->probability_loan = $probability_loan;
         return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return [
+          'id' => $this->getId(),
+          'entity_name' => $this->getEntityName(),
+          'entity_type' => $this->getEntityType(),
+          'credit_score' => $this->getCreditScore(),
+          'address' => $this->getAddress(),
+          'probability_default' => $this->getProbabilityDefault(),
+          'probability_loan' => $this->getProbabilityLoan()
+        ];
     }
 
 }
