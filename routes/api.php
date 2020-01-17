@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Routing\Route;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,3 +10,5 @@ use Illuminate\Routing\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('/entity_info', \App\Entities\Controllers\EntityInfoController::class);
