@@ -2,10 +2,18 @@
 
 namespace App\Entities\Transformations;
 
+use App\Entities\Models\Entity;
 
 class EntityInfoTransformation
 {
-    public function handle() {
+    /**
+     * @param Entity $entity
+     * @return array
+     */
+    public function handle(Entity $entity): array {
+        $array = $entity->toArray();
+        unset($array['entity_name']);
 
+        return $array;
     }
 }
