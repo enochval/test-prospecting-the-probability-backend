@@ -5,7 +5,7 @@ namespace App\Entities\Controllers;
 use App\Entities\Requests\EntityInfoRequest;
 use App\Entities\Services\GetEntitiesByNameService;
 use App\Entities\Transformations\EntityInfoTransformation;
-use App\Http\Controllers\Controller;
+use App\Platform\Http\Controllers\Controller;
 
 class EntityInfoController extends Controller
 {
