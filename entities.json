@@ -1,0 +1,11 @@
+[
+  {
+    "id": "c5c6aced-4359-4a9e-a896-f971196002f6",
+    "entity_name": "Ambassador Packaging Ltd",
+    "entity_type": "Company",
+    "credit_score": 95,
+    "address": "Tundry Way, Chainbridge Rd Industrial Estate, Blaydon-On-Tyne, NE21 5ST",
+    "probability_default": 0.1,
+    "probability_loan": 0.9
+  }
+]
