@@ -2,9 +2,14 @@
 
 namespace App\Entities\Requests;
 
-use Illuminate\Http\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
-class EntityInfoRequest extends Request
+class EntityInfoRequest extends FormRequest
 {
-
+    public function rules()
+    {
+        return [
+            'entity_name' => 'required',
+        ];
+    }
 }
