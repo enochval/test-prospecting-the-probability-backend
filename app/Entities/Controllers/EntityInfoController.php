@@ -2,10 +2,10 @@
 
 namespace App\Entities\Controllers;
 
+use App\Entities\Requests\EntityInfoRequest;
 use App\Entities\Services\GetEntitiesByNameService;
 use App\Entities\Transformations\EntityInfoTransformation;
 use App\Http\Controllers\Controller;
-use App\Requests\EntityInfoRequest;
 
 class EntityInfoController extends Controller
 {
