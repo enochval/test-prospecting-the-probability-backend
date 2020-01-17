@@ -22,6 +22,7 @@ class EntitiesRepository extends JsonRepository
 
         $entities->each(function (&$entity) {
             $entity = (new Entity())
+                        ->setEntityName($entity->name)
                         ->setId($entity->id)
                         ->setEntityType($entity->entity_type)
                         ->setAddress($entity->address)
