@@ -10,7 +10,7 @@ class EntitiesRepository extends JsonRepository
 {
     public function __construct()
     {
-        $this->setJsonFile(base_path('composer.json'));
+        $this->setJsonFile(base_path('entities.json'));
     }
 
     /**
@@ -20,9 +20,9 @@ class EntitiesRepository extends JsonRepository
     {
         $entities = parent::handle();
 
-        $entities->each(function (&$entity) {
-            $entity = (new Entity())
-                        ->setEntityName($entity->name)
+        $entities->transform(function ($entity) {
+            return (new Entity())
+                        ->setEntityName($entity->entity_name)
                         ->setId($entity->id)
                         ->setEntityType($entity->entity_type)
                         ->setAddress($entity->address)
