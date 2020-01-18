@@ -23,7 +23,7 @@ class GetEntitiesByNameRepository extends AbstractRepository
      */
     public function handle(string $entity_name): ?Entity
     {
-        return $this->entitiesRepository->handle()->first(function(Entity $entity) use ($entity_name) {
+        return $this->entitiesRepository->handle()->first(function (Entity $entity) use ($entity_name) {
             if ($entity->getEntityName() == $entity_name) {
                 return true;
             }

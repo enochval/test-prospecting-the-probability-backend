@@ -22,13 +22,13 @@ class EntitiesRepository extends JsonRepository
 
         $entities->transform(function ($entity) {
             return (new Entity())
-                        ->setEntityName($entity->entity_name)
-                        ->setId($entity->id)
-                        ->setEntityType($entity->entity_type)
-                        ->setAddress($entity->address)
-                        ->setCreditScore($entity->credit_score)
-                        ->setProbabilityDefault($entity->probability_default)
-                        ->setProbabilityLoan($entity->probability_loan);
+                ->setEntityName($entity->entity_name)
+                ->setId($entity->id)
+                ->setEntityType($entity->entity_type)
+                ->setAddress($entity->address)
+                ->setCreditScore($entity->credit_score)
+                ->setProbabilityDefault($entity->probability_default)
+                ->setProbabilityLoan($entity->probability_loan);
         });
 
         return $entities;

@@ -17,7 +17,8 @@ class GetEntitiesByNameService extends AbstractService
      * @param string $entity_name
      * @return Entity|null
      */
-    public function handle(string $entity_name): ?Entity {
+    public function handle(string $entity_name): ?Entity
+    {
         return $this->getRepository()->handle($entity_name);
     }
 }

@@ -208,13 +208,13 @@ class Entity extends Model
     public function toArray(): array
     {
         return [
-          'id' => $this->getId(),
-          'entity_name' => $this->getEntityName(),
-          'entity_type' => $this->getEntityType(),
-          'credit_score' => $this->getCreditScore(),
-          'address' => $this->getAddress(),
-          'probability_default' => $this->getProbabilityDefault(),
-          'probability_loan' => $this->getProbabilityLoan()
+            'id' => $this->getId(),
+            'entity_name' => $this->getEntityName(),
+            'entity_type' => $this->getEntityType(),
+            'credit_score' => $this->getCreditScore(),
+            'address' => $this->getAddress(),
+            'probability_default' => $this->getProbabilityDefault(),
+            'probability_loan' => $this->getProbabilityLoan()
         ];
     }
 
