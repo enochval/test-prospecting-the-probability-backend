@@ -4,7 +4,7 @@ This application has been written in Laravel, while the front-end is done by Rea
 
 The front-end code can be accessed here ...
 
-### Installation
+## Installation
 
 1. Clone the repository
 2. Clone the front-end repository as well
@@ -13,7 +13,7 @@ The front-end code can be accessed here ...
 5. Run `php artisan serve`
 6. Follow the installation guide on the front-end repository
 
-### API routes
+## API routes
 
 - `GET /entity_info` Gets entity info. Expects `entity_name` to be sent with the request. Will only return the first match. Full API doc can be read [here](https://app.swaggerhub.com/apis/i6643/prospectingProbability/1.0.0#/EntityInfo).
 
