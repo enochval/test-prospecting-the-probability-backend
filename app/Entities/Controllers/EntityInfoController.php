@@ -36,7 +36,7 @@ class EntityInfoController extends Controller
     {
         $entityInfo = $this->getEntitiesByNameService->handle($entityInfoRequest->get('entity_name'));
 
-        return $this->entityInfoTransformation->handle($entityInfo);
+        return $entityInfo ? $this->entityInfoTransformation->handle($entityInfo) : [];
     }
 
 }
