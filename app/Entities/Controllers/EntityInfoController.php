@@ -14,18 +14,11 @@ class EntityInfoController extends Controller
      */
     private $getEntitiesByNameService;
 
-    /**
-     * @var EntityInfoTransformation
-     */
-    private $entityInfoTransformation;
-
     public function __construct(
-        GetEntitiesByNameService $getEntitiesByNameService,
-        EntityInfoTransformation $entityInfoTransformation
+        GetEntitiesByNameService $getEntitiesByNameService
     )
     {
         $this->getEntitiesByNameService = $getEntitiesByNameService;
-        $this->entityInfoTransformation = $entityInfoTransformation;
     }
 
     /**
@@ -36,7 +29,7 @@ class EntityInfoController extends Controller
     {
         $entityInfo = $this->getEntitiesByNameService->handle($entityInfoRequest->get('entity_name'));
 
-        return $entityInfo ? $this->entityInfoTransformation->handle($entityInfo) : [];
+        return $entityInfo ? EntityInfoTransformation::handle($entityInfo) : [];
     }
 
 }
