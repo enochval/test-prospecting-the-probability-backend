@@ -16,6 +16,11 @@ if I was interviewing for a solely front-end role, I might do some of the things
 5. Run `php artisan serve`
 6. Follow the installation guide on the front-end repository
 
+## Test
+
+- When running the tests, we use `entities_test.json` 
+- To execute it, run `vendor/bin/phpunit`
+
 ## API routes
 
 - `GET /entity_info` Gets entity info. Expects `entity_name` to be sent with the request. Will only return the first match. Full API doc can be read [here](https://app.swaggerhub.com/apis/i6643/prospectingProbability/1.0.0#/EntityInfo).
