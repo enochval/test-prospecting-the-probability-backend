@@ -37,3 +37,4 @@ if I was interviewing for a solely front-end role, I might do some of the things
 - Most of the Abstract classes are empty, and logic is somewhat duplicated because of time constraints
 - GrumPHP should be installed to git pre-commits
 - Better docblocks for Laravel magic-functions 
+- Use different "repository" for testing
