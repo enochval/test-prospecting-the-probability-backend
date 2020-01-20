@@ -18,7 +18,6 @@ if I was interviewing for a solely front-end role, I might do some of the things
 
 ## Test
 
-- When running the tests, we use `entities_test.json` 
 - To execute it, run `vendor/bin/phpunit`
 
 ## API routes
