@@ -2,7 +2,7 @@
 
 This application has been written in Laravel, while the front-end is done in React.js.
 
-The front-end code can be accessed here ...
+The front-end code can be accessed [here](https://github.com/Kravinskiy/test-prospecting-the-probability-frontend)
 
 Please note, that when writing this project, I mainly focused on the back-end part, so while I tried to keep it clean,
 if I was interviewing for a solely front-end role, I might do some of the things different. :-)
