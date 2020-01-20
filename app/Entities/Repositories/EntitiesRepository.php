@@ -8,9 +8,9 @@ use Illuminate\Support\Collection;
 
 class EntitiesRepository extends JsonRepository
 {
-    public function __construct()
+    public function __construct(string $jsonFile = 'entities.json')
     {
-        $this->setJsonFile(base_path('entities.json'));
+        $this->setJsonFile(base_path($jsonFile));
     }
 
     /**
