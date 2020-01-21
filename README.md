@@ -23,6 +23,7 @@ if I was interviewing for a solely front-end role, I might do some of the things
 ## API routes
 
 - `GET /entity_info` Gets entity info. Expects `entity_name` to be sent with the request. Will only return the first match. Full API doc can be read [here](https://app.swaggerhub.com/apis/i6643/prospectingProbability/1.0.0#/EntityInfo).
+Example values: Wilkinson-Schinner Ltd, Ambassador Packaging Ltd, Armstrong-Ernser Limited
 
 ## Good to know
 
